@@ -2,32 +2,38 @@
 <html>
 
 <head>
-<meta charset="UTF-8">
-<title>Mount Fuji</title>
+    <meta charset="UTF-8">
+    <title>Mount Fuji</title>
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        h1{
+            font-size: 100px;
+        }
+    </style>
 </head>
 
 <body>
     <h1 style="font-size:100px;color:steelblue">Win's Mount FUJI</h1>
     <svg class="pop" id="svg" width="300" height="300" viewbox="0 0 100 100">
         <filter id="blur">
-          <feGaussianBlur stdDeviation="1" />
+            <feGaussianBlur stdDeviation="1" />
         </filter>
         <path class="slidein" id="mountain" fill="#ab9457" d="" />
     </svg>
-    
+    <h1>It is high and big</h1>
+
     <button onclick="generateMountain()">Win's big big mountain</button>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('button').on('click', function(e){
+        $(document).ready(function () {
+            $('button').on('click', function (e) {
                 alert('New mountain is coming!Yeah!');
             });
         });
     </script>
 </body>
+
 </html>
